@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="701.0" prefWidth="645.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pathfinder.controller.ParkController">
+    <stylesheets>
+        <URL value="@park.css" />
+    </stylesheets>
+   <children>
+      <Pane id="bg" prefHeight="650.0" prefWidth="645.0">
+         <children>
+            <Group fx:id="group" autoSizeChildren="false" layoutX="35.0" layoutY="54.0" />
+            <Label id="lAku" fx:id="aku" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="258.0" layoutY="457.0" onMousePressed="#akuKepencet" prefHeight="54.0" prefWidth="71.0" text="kamu disini" textFill="#5e00b5">
+               <graphic>
+                  <FontAwesomeIconView id="lAku" fill="#8500ff" glyphName="CHILD" size="30" />
+               </graphic>
+               <effect>
+                  <DropShadow height="3.21" radius="1.105" width="3.21" />
+               </effect>
+            </Label>
+            <Pane layoutX="-190.0" layoutY="-632.0" prefHeight="688.0" prefWidth="1020.0" style="-fx-background-color: #60c8d0; -fx-background-radius: 50%;">
+               <effect>
+                  <DropShadow height="9.14" radius="1.8450000000000002" width="0.24" />
+               </effect>
+               <children>
+                  <Label alignment="CENTER" layoutX="273.0" layoutY="632.0" prefHeight="46.0" prefWidth="490.0" text="PECELKANE PARK" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane onMouseDragged="#onDrag" onMousePressed="#onPress" prefHeight="49.0" prefWidth="645.0" />
+            <Button id="bt" fx:id="istana" layoutX="480.0" layoutY="197.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="91.0" />
+            <Button id="bt" fx:id="komediPutar" layoutX="524.0" layoutY="481.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="91.0" />
+            <Button id="bt" fx:id="ayunanMantul" layoutX="63.0" layoutY="327.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="88.0" />
+            <Pane fx:id="paneBiangLele" layoutX="30.0" layoutY="80.0" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: white; -fx-background-radius: 7px;">
+               <children>
+                  <Pane prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #ffad1f; -fx-background-radius: 7px 0px 0px 7px;">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="FORT_AWESOME" layoutX="10.0" layoutY="19.0" size="18" wrappingWidth="18.99999839067459" />
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="37.0" prefHeight="25.0" prefWidth="103.0" text="biang lele" textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button id="rt" contentDisplay="TOP" graphicTextGap="0.0" layoutX="129.0" layoutY="-6.0" mnemonicParsing="false" onAction="#goBiangLele" prefHeight="40.0" prefWidth="35.0" textFill="#0346ff">
+                     <graphic>
+                        <FontAwesomeIconView fill="#ff512b" glyphName="PLAY" size="14" />
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow height="6.17" radius="2.585" width="6.17" />
+               </effect>
+            </Pane>
+            <Pane fx:id="paneBombom" layoutX="258.0" layoutY="188.0" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: white; -fx-background-radius: 7px;">
+               <children>
+                  <Pane prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #ffad1f; -fx-background-radius: 7px 0px 0px 7px;">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="FORT_AWESOME" layoutX="10.0" layoutY="19.0" size="18" wrappingWidth="18.99999839067459" />
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="37.0" prefHeight="25.0" prefWidth="103.0" text="bom-bom duar" textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button id="rt" contentDisplay="TOP" graphicTextGap="0.0" layoutX="130.0" layoutY="-6.0" mnemonicParsing="false" onAction="#goBombom" prefHeight="40.0" prefWidth="35.0" textFill="#0346ff">
+                     <graphic>
+                        <FontAwesomeIconView fill="#ff512b" glyphName="PLAY" size="14" />
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow height="6.17" radius="2.585" width="6.17" />
+               </effect>
+            </Pane>
+            <Pane fx:id="paneCurciss" layoutX="244.0" layoutY="312.0" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: white; -fx-background-radius: 7px;">
+               <children>
+                  <Pane prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #ffad1f; -fx-background-radius: 7px 0px 0px 7px;">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="FORT_AWESOME" layoutX="10.0" layoutY="19.0" size="18" wrappingWidth="18.99999839067459" />
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="37.0" prefHeight="25.0" prefWidth="103.0" text="curciss" textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button id="rt" contentDisplay="TOP" graphicTextGap="0.0" layoutX="130.0" layoutY="-6.0" mnemonicParsing="false" onAction="#goCurciss" prefHeight="40.0" prefWidth="35.0" textFill="#0346ff">
+                     <graphic>
+                        <FontAwesomeIconView fill="#ff512b" glyphName="PLAY" size="14" />
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow height="6.17" radius="2.585" width="6.17" />
+               </effect>
+            </Pane>
+            <Pane fx:id="paneWaniGas" layoutX="399.0" layoutY="60.0" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: white; -fx-background-radius: 7px;">
+               <children>
+                  <Pane prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #ffad1f; -fx-background-radius: 7px 0px 0px 7px;">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="FORT_AWESOME" layoutX="10.0" layoutY="19.0" size="18" wrappingWidth="18.99999839067459" />
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="37.0" prefHeight="25.0" prefWidth="103.0" text="wani gas" textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button id="rt" contentDisplay="TOP" graphicTextGap="0.0" layoutX="130.0" layoutY="-6.0" mnemonicParsing="false" onAction="#goWaniGas" prefHeight="40.0" prefWidth="35.0" textFill="#0346ff">
+                     <graphic>
+                        <FontAwesomeIconView fill="#ff512b" glyphName="PLAY" size="14" />
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow height="6.17" radius="2.585" width="6.17" />
+               </effect>
+            </Pane>
+            <Button id="bt" layoutX="230.0" layoutY="338.0" mnemonicParsing="false" onAction="#circus" prefHeight="90.0" prefWidth="181.0" />
+            <Button id="bt" layoutX="39.0" layoutY="86.0" mnemonicParsing="false" onAction="#biangLala" prefHeight="203.0" prefWidth="128.0" />
+            <Button id="bt" layoutX="245.0" layoutY="216.0" mnemonicParsing="false" onAction="#bomcar" prefHeight="71.0" prefWidth="182.0" />
+            <Button id="bt" layoutX="273.0" layoutY="92.0" mnemonicParsing="false" onAction="#rollercoaster" prefHeight="80.0" prefWidth="293.0" />
+         </children>
+      </Pane>
+      <Button layoutX="4.0" layoutY="654.0" mnemonicParsing="false" onAction="#cari" prefHeight="43.0" prefWidth="637.0" style="-fx-background-color: #8500ff; -fx-background-radius: 5PX;" text="CARI WAHANA" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow height="9.14" radius="4.07" width="9.14" />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="25" />
+         </graphic>
+      </Button>
+      <Pane fx:id="paneRoute" prefHeight="701.0" prefWidth="645.0" style="-fx-background-color: #00000071;">
+         <children>
+            <Pane layoutX="223.0" layoutY="251.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15px;">
+               <children>
+                  <Label alignment="CENTER" layoutX="4.0" layoutY="142.0" prefHeight="54.0" prefWidth="192.0" text="FINDING BEST ROUTE" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXSpinner id="sp" layoutX="14.0" layoutY="10.0" prefHeight="121.0" prefWidth="169.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

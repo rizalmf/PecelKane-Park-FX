@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+.button{
+    -fx-cursor: hand;
+}
+#bg{
+    -fx-background-image: url("images/img_park.jpeg");
+    -fx-background-size: stretch;
+}
+#bt{
+    -fx-background-color: transparent;
+}
+#rt{
+    -fx-background-color: transparent;
+}
+#rt .text{
+    -fx-padding: 8px 0px 0px 0px;
+}
+#lAku{
+    -fx-text-fill: #5e00b5;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-content-display: bottom;
+    /*-fx-border-color:black;*/
+    /*-fx-font-family: "Arial";*/
+}
+#sp .arc{
+    -fx-stroke-width:15px;
+}
